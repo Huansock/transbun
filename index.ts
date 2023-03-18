@@ -20,7 +20,7 @@ const server = Bun.serve({
             const jsonString = Buffer.from(message).toString('utf8')
             const parsedData = JSON.parse(jsonString)
             const resourceData = JSON.stringify(parsedData.data)
-            const res = await fetch("https://transwooseok.fun/translate", {
+            const res = await fetch("https://translate.argosopentech.com/translate", {
                 method: "POST",
                 body: JSON.stringify({
                   q: resourceData,
