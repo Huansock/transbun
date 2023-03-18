@@ -33,7 +33,9 @@ const server = Bun.serve({
                  const en_text = JSON.stringify(en_json["translatedText"])   
                  ws.send(en_text.slice(3,-3)); // echo back the message
         }, // a message is received
-        open(ws) {}, // a socket is opened
+        open(ws) {
+          console.log("websocket is open");
+        }, // a socket is opened
         close(ws, code, message) {}, // a socket is closed
         drain(ws) {}, // the socket is ready to receive more data
     }, // handlers
