@@ -1,0 +1,10 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: transBun
+    src: .
+    engine: bunjs
+    primary: true
+    commands:
+      - bun install
+    run: bun run index.ts

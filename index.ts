@@ -4,7 +4,7 @@ interface Data {
   }
 
 const server = Bun.serve({
-    port:3000,
+    port:8080,
     fetch(req , server) {
         // upgrade the request to a WebSocket
         if (server.upgrade(req)) {

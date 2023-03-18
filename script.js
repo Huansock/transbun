@@ -5,7 +5,7 @@ const btn_end = document.querySelector('#btn_end');
 const btn_start = document.querySelector('#btn_start');
 const script = document.querySelector('#script');
 const myList = document.getElementById("myList");
-const socket = new WebSocket("ws://transbun.hop.sh");
+const socket = new WebSocket("ws://transwooseok.fun:8080");
 let mysrcipt = [];
 
 //socket setting
